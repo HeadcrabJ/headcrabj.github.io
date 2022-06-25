@@ -1,44 +1,46 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: auto;
     text-align: center;
+    color: white;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
 }
+
 div {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 a {
     text-decoration: none;
+    color: wheat;
 }
+
 .link-array a {
     margin-left: 4px;
     margin-right: 4px;
 }
+
 .divider {
     display: flex;
-}
-.divider:before, .divider:after {
-    content: "";
-    flex: 1;
-}
-
-.line {
     align-items: center;
     margin: 1em -1em;
 }
-.line:before, .line:after {
-    height: 1px;
-    margin: 0 1em;
-}
 
-.glow:before, .glow:after {
+.divider:before, .divider:after {
+    content: "";
+    flex: 1;
+    margin: 0 1em;
     height: 6px;
-    filter: blur(5px);
+    filter: blur(2px);
     border-radius: 5px;
 }
-.glow:before {
+
+.divider:before {
     background: linear-gradient(to right, blue, hotpink);
 }
-.glow:after {
+
+.divider:after {
     background: linear-gradient(to left, blue, hotpink);
 }
