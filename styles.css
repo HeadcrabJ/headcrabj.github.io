@@ -17,9 +17,12 @@ a {
     color: wheat;
 }
 
+h1, h2 {
+    text-shadow: 1px 1px 4px #ccc;
+}
+
 .link-array a {
-    margin-left: 4px;
-    margin-right: 4px;
+    margin: 8px;
 }
 
 .divider {
