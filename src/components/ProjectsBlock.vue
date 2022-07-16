@@ -4,7 +4,7 @@ import Project from "./items/ProjectItem.vue";
 
 <template>
   <div>
-    <h2 class="divider">Projects</h2>
+    <h2>Projects</h2>
     <Project
       repository="Module"
       description="Multipurporse Discord bot written on Java and Spring."

@@ -1,8 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .title_container {
@@ -14,7 +17,6 @@ body {
 .title {
   position: relative;
   margin: auto 0;
-  font-family: "Montserrat", sans-serif;
   font-size: 26vh;
   text-align: center;
   color: white;
@@ -24,9 +26,7 @@ body {
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite;
 }
-h1:nth-child(2) {
-  top: 50vh;
-}
+
 @keyframes shine {
   from {
     background-position: center 0;
@@ -39,15 +39,6 @@ h1:nth-child(2) {
 a {
   text-decoration: none;
   color: dimgray;
-}
-
-.link-array a {
-  margin: 8px;
-}
-
-.divider {
-  align-items: center;
-  margin: 1em -1em;
 }
 
 .content {
