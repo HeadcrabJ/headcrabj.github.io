@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+  margin: auto 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26vh;
+  text-align: center;
+  color: white;
+  background: url("https://thumbs.dreamstime.com/b/watercolor-floral-tropical-seamless-pattern-vintage-exotic-flowers-bird-paradise-twigs-leaves-botanical-bright-classic-86620056.jpg");
+  background-size: auto 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 8s linear infinite;
+}
+h1:nth-child(2) {
+  top: 50vh;
+}
+@keyframes shine {
+  from {
+    background-position: center 0;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: dimgray;
+}
+
+.link-array a {
+  margin: 8px;
+}
+
+.divider {
+  align-items: center;
+  margin: 1em -1em;
+}
+
+.content {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
