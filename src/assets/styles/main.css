@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
+  overflow: hidden;
   font-family: 'Montserrat', sans-serif;
   user-select: none;
   -webkit-user-select: none;
@@ -8,10 +7,25 @@ body {
   -ms-user-select: none;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 .title_container {
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+
+.title_footer {
+  position: absolute;
+  bottom: 0;
+  color: dimgrey;
+}
+
+.empty_container {
+  height: 100vh;
 }
 
 .title {
@@ -25,6 +39,24 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 8s linear infinite;
+}
+
+@media (max-width: 920px) {
+  .title {
+    font-size: 20vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 16vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 13vh;
+  }
 }
 
 @keyframes shine {

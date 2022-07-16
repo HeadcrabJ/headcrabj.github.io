@@ -13,7 +13,7 @@ defineProps({
 
 <template>
   <p>
-    <a :href="'https://github.com/HeadcrabJ/' + repository">Module</a> -
-    {{ description }}
+    <a :href="'https://github.com/HeadcrabJ/' + repository">{{ repository }}</a>
+    - {{ description }}
   </p>
 </template>
